@@ -2,7 +2,7 @@
 /**
  * FC Reviews Settings Class
  */
-class FC_Settings {
+class FCSettings {
     
     private static $option_name = 'fc_reviews_settings';
     
@@ -13,8 +13,8 @@ class FC_Settings {
         // Add admin menu
         // add_action('admin_menu', [__CLASS__, 'add_admin_menu']);
         
-        // // Register settings
-        // add_action('admin_init', [__CLASS__, 'register_settings']);
+        // Register settings
+        add_action('admin_init', [__CLASS__, 'register_settings']);
     }
 
     /**
